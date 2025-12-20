@@ -38,7 +38,7 @@ function Dashboard() {
     { id: 2, label: "Schedule", icon: "📅", color: "#6d4abeff" },
     { id: 3, label: "Team Chat", icon: "💬", color: "#963f6bff" },
     { id: 4, label: "Reports", icon: "📊", color: "#357c64ff" },
-  ];
+  ];  
 
   const activityFeed = [
     {
@@ -95,7 +95,7 @@ function Dashboard() {
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 400 }}
           >
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <svg width="20"  height="20" viewBox="0 0 20 20" fill="none">
               <path
                 d="M10 2C5.58 2 2 5.58 2 10C2 14.42 5.58 18 10 18C14.42 18 18 14.42 18 10C18 5.58 14.42 2 10 2ZM10 16C6.69 16 4 13.31 4 10C4 6.69 6.69 4 10 4C13.31 4 16 6.69 16 10C16 13.31 13.31 16 10 16Z"
                 fill="currentColor"
@@ -167,7 +167,7 @@ function Dashboard() {
               <span className="card-label">Active Members</span>
               <motion.div
                 className="card-icon"
-                style={{ background: "linear-gradient(135deg, #ec4899 0%, #bd3249ff 100%)" }}
+                style={{ background: "linear-gradient(135deg, #ccb7c1ff 0%, #e7cbcfff 100%)" }}
               >
                 👥
               </motion.div>
@@ -330,10 +330,10 @@ function Dashboard() {
                 <motion.div
                   key={activity.id}
                   className="activity-item"
-                  initial={{ opacity: 0, x: -20 }}
+                  initial={{ opacity: 0, x: -30 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.8 + index * 0.1 }}
-                  whileHover={{ x: 4, backgroundColor: "rgba(99, 102, 241, 0.05)" }}
+                  transition={{ delay: 0.02 + index * 0.1 }}
+                  whileHover={{ x: 4, backgroundColor: "rgba(124, 19, 59, 0.05)" }}
                 >
                   <div className="activity-avatar">{activity.avatar}</div>
                   <div className="activity-content">

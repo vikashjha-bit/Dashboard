@@ -149,7 +149,7 @@ function Analytics() {
                   animate={{
                     background:
                       selectedPeriod === period
-                        ? "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)"
+                        ? "linear-gradient(135deg,  #6366f1 0%, #8b5cf6 100%)"
                         : "white",
                     color: selectedPeriod === period ? "white" : "#64748b",
                   }}
@@ -258,11 +258,11 @@ function Analytics() {
                     x2={chartData.length * 40}
                     y2={chartHeight - (val / 100) * chartHeight}
                     stroke="#e2e8f0"
-                    strokeWidth="1"
+                    strokeWidth="3"
                     strokeDasharray="4 4"
                   />
                 ))}
-
+                
                 {/* Productivity line */}
                 <motion.polyline
                   points={chartData
